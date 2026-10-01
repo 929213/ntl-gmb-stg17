@@ -1,0 +1,171 @@
+{
+  "run_id": "20261001T104500Z",
+  "generated_utc": "2026-10-01T10:47:08.225343+00:00",
+  "country": {
+    "iso3": "GMB",
+    "name": "Republic of the Gambia",
+    "bbox": [
+      -16.814202729172564,
+      13.0434665864139,
+      -13.79111750426938,
+      13.823235736440154
+    ]
+  },
+  "provider": "gee",
+  "simulated_data": false,
+  "years": {
+    "baseline": 2015,
+    "endline": 2024,
+    "monthly": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "admin_levels": {
+    "ADM0": 1,
+    "ADM1": 8,
+    "ADM2": 48
+  },
+  "parameters": {
+    "NOISE_FLOOR": 0.25,
+    "URBAN_CORE": 10.0,
+    "TOPCODE_PCT": 99.9,
+    "POP_LIT_MIN": 1.0,
+    "TARGET_SCALE_M": 500,
+    "USE_TOPCODED": true,
+    "MASK_FLARES": true,
+    "FLARE_BUFFER_PX": 2,
+    "NOISE_SENSITIVITY": [
+      0.15,
+      0.25,
+      0.5
+    ],
+    "CHANGE_MIN_BASE_PCT": 10,
+    "MONTHLY_MIN_COVERAGE": 0.8,
+    "ALLOW_MIXED_PRODUCTS": false,
+    "OFFICIAL_STATS_LEVEL": "ADM1",
+    "VALIDATION_MIN_N": 20
+  },
+  "ntl_products": {
+    "2015": "NOAA/VIIRS/DNB/ANNUAL_V21 · average_masked",
+    "2024": "NOAA/VIIRS/DNB/ANNUAL_V22 · average_masked"
+  },
+  "ntl_product_families": {
+    "2015": "EOG VNL V2 annual (V2.1 / V2.2) · average_masked",
+    "2024": "EOG VNL V2 annual (V2.1 / V2.2) · average_masked"
+  },
+  "population_years": {
+    "2015": 2015,
+    "2024": 2020
+  },
+  "growth_method": "annual growth between the median of years 2015–2017 and that of years 2022–2024",
+  "trend_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "spatial_autocorrelation": {
+    "SoL growth (scenario E)": {
+      "I": 0.014659260702205962,
+      "p": 0.364,
+      "n": 17,
+      "n_eff": 17,
+      "expected": -0.0625
+    },
+    "Elasticity residuals (scenario A)": {
+      "I": 0.47632618227506757,
+      "p": 0.002,
+      "n": 44,
+      "n_eff": 16,
+      "expected": -0.023255813953488372
+    },
+    "Light per capita (scenario D)": {
+      "I": 0.3638956725508632,
+      "p": 0.002,
+      "n": 48,
+      "n_eff": 22,
+      "expected": -0.02127659574468085
+    }
+  },
+  "values_used": "values top-coded at percentile 99.9",
+  "topcode_value": 16.938512802124023,
+  "flare_masking": {
+    "masked_pixels": 0,
+    "applied": false,
+    "sol_removed": {}
+  },
+  "monthly_quality": {
+    "dropped": 4,
+    "rescaled": 28,
+    "min_coverage": 0.8
+  },
+  "electrification_range": [
+    842427.8125,
+    904285.625
+  ],
+  "artefacts": {
+    "2015": {
+      "pixels": 118624,
+      "share_below_noise_floor": 0.9841684650660911,
+      "share_lit": 0.01583153493390882,
+      "share_urban_core": 0.0004805098462368492,
+      "p50": 0.0,
+      "p90": 0.0,
+      "p99": 0.591564416885376,
+      "p9999": 13.82339096069336,
+      "max": 22.05259895324707,
+      "sol_share_top1pct_pixels": 0.9083870053291321,
+      "share_near_max": 8.429997302400863e-06,
+      "core_pop_per_pixel": 1805.9638671875
+    },
+    "2024": {
+      "pixels": 118624,
+      "share_below_noise_floor": 0.8810443080658215,
+      "share_lit": 0.11895569193417858,
+      "share_urban_core": 0.0025964391691394658,
+      "p50": 0.0,
+      "p90": 0.46170181035995483,
+      "p99": 3.212641477584839,
+      "p9999": 17.593015670776367,
+      "max": 22.52183723449707,
+      "sol_share_top1pct_pixels": 0.46234872937202454,
+      "share_near_max": 8.429997302400863e-06,
+      "core_pop_per_pixel": 1606.7457275390625
+    }
+  },
+  "flare_candidates": {
+    "2015": [],
+    "2024": []
+  },
+  "verdict": "experimental",
+  "verdict_basis": "Sum of Lights vs population",
+  "verdict_reasons": [
+    "no independent official statistic: the correlation with population is a consistency check, not a validation"
+  ],
+  "validation_level": "ADM1",
+  "best_spearman": 0.7857142857142858,
+  "spearman_ci_low": 0.15601237547969551,
+  "software": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "geopandas": "1.1.4",
+    "rasterio": "1.5.1"
+  },
+  "licences": {
+    "boundaries": "geoBoundaries gbOpen, CC BY 4.0",
+    "population": "WorldPop, CC BY 4.0",
+    "ntl": "VIIRS / NASA Black Marble — US Government work, attribution requested",
+    "code": "MIT",
+    "derived_data": "CC BY 4.0"
+  }
+}

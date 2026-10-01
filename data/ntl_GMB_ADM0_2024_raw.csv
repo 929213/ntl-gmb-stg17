@@ -1,0 +1,2 @@
+shapeID,name,area_km2,n_pixels,sol,rad_km2,sol_per_km2,mean_rad,median_rad,p90_rad,max_rad,lit_area_km2,lit_share,core_area_km2,core_share,pop,pop_inhabited,pop_lit,pop_dark,pop_lit_share,pop_density,sol_per_capita,gini_pixels,gini_pop_light,cv_rad,sol_share_nat,pop_share_nat,light_pop_ratio
+76403400B75058912772036,Republic of the Gambia,10553,43695,12138.2,2932.46,1.15021,0.277793,0,0.502732,22.5218,1329.26,0.12596,71.7411,0.00679815,2.33797e+06,2.33789e+06,1.52495e+06,812937,0.652278,221.545,0.00519175,0.948883,0.624014,4.7833,1,1,1
